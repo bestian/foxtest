@@ -17,6 +17,10 @@
     }
   ],
 
+  "options_ui": {
+      "page": "options.html"
+  },
+
   "applications": {
     "gecko": {
       "id": "borderify@example.com",
