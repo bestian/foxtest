@@ -12,7 +12,12 @@
 
   "content_scripts": [
     {
-      "matches": ["*://www.ruten.com.tw/*", "*://search.ruten.com.tw/*"],
+      "matches": 
+      ["*://www.ruten.com.tw/*", 
+       "*://search.ruten.com.tw/*",
+       "*://class.ruten.com.tw/*",
+       "*://*.ruten.com.tw/*"
+      ],
       "js": ["foxtest.js"]
     }
   ],

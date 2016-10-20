@@ -5,6 +5,9 @@ console.log("This is an informational message");
 var invis = function(os, n) {
 	for (var i = 0; i < os.length; i++) {
 	    os[i].style.opacity = n;
+	    if(!n) {
+	    	os[i].style.display = 'none';
+	    }
 	}
 }
 var xs = document.getElementsByClassName('bd');
