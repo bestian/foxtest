@@ -10,7 +10,7 @@ var invis = function(os, n) {
 	    }
 	}
 }
-var xs = document.getElementsByClassName('bd');
+var xs = document.getElementsByClassName('tab-ad-block-right');
 var ys = document.getElementsByClassName('adslot');
 var zs = document.getElementsByClassName('rt-ad');
 invis(xs,0.1);
@@ -62,7 +62,7 @@ for (var i = 0; i < invalids.length; i++) {
 var imgs = document.getElementsByTagName('img');
 for (var i = 0; i < imgs.length; i++) {
 	var m = imgs[i];
-	if (m.src.match(/\.gif$/)) {
+	if (m.src.match(/\.gif$/) && !m.src.match(/logo/)) {
 		m.style.opacity = '0.1';
 	}
 } 
